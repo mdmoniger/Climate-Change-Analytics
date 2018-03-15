@@ -73,7 +73,7 @@ In fact, mean summer temperatures were ~0.44°C colder in the 2000s, while mean 
 
 ![Tempmeans](src/Tempmeans.png)
 
-### Temperature by decade is not normally distributed, but the t-test can still be valid with such large sample sizes. Below, p-values are calculated with the nonparametric Mann-Whitney U test to confirm the t-test results.
+### Temperature by decade is not normally distributed, but the t-test can still provide valid results with such large sample sizes. Below, p-values are calculated with the nonparametric Mann-Whitney U test to confirm the t-test results.
 
 ![Mann-Whitney U](src/Mannwhitneyresults.png)
 
