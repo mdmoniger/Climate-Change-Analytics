@@ -11,25 +11,31 @@ The original dataset, which can be found [here](http://cdiac.ess-dive.lbl.gov/ft
 Further data cleaning involved triming the dataset down to only the few columns relevant to the intended hypothesis tests, followed by
 
 A correlation heat map was plotted to visualize correlation between features and to detail their exact coefficients of correlation.
+
 ![Correlation Heat Map](src/corrheatmap.png)
 
 The two predictive features of interest were (originally) temperature and dissolved oxygen content; each was scatter plotted against time.
+
 ![Temp vs Yr Scatter](src/tempyrscatter.png)
 ![Oxy vs Yr Scatter](src/oxyyrscatter.png)
 
 Due to the high correlation between depth and temperature, and because SST is a typical indicator for climate change, the data was further trimmed to include only sea surface measurements.
+
 ![SS Correlation Heat Map](src/sscorrheatmap.png)
 
 Again, temperature and oxygen were plotted against time. Notice the high variability in temperatures; this will become relevant soon.
+
 ![SS Temp vs Yr Scatter](src/sstempyrscatter.png)
 ![SS Oxy vs Yr Scatter](src/ssoxyyrscatter.png)
 
 A scatter matrix was plotted between all available features to further visualize the data (and, interestingly, to plot a rough globe when plotting latitude vs longitude).
+
 ![Scatter Matrix](src/scatter.png)
 
 Due to the extremely high correlation between dissolved oxygen content and temperature (see [Henry's Law](https://en.wikipedia.org/wiki/Henry%27s_law) and the [Van 't Hoff equation](https://en.wikipedia.org/wiki/Van_%27t_Hoff_equation)), focus was directed primarily on SST. It was surmised that the aforementioned variance in annual temperature may correspond to seasonal variance. To this end, data was split into northern and southern hemispheres, excluding the tropics, then rejoined based on the typical summer and winter months in each hemisphere.
 
 Mean seasonal temperatures were then plotted against year.
+
 ![Mean Summer Temps](src/mst.png)
 ![Mean Winter Temps](src/mwt.png)
 
@@ -46,6 +52,7 @@ Are sea surface temperatures in the early 2000s (2000 to 2009) significantly dif
 Null Hypothesis 1: 1990s winter SST = 2000s winter SST
 Alternative Hypothesis 1: 1990s winter SST != 2000s winter SST
 Significance level: 0.05 (two-tailed)
+
 ![Winter Distributions](src/winterdists.png)
 ![Winter t-test](src/winter_ttest.png)
 
@@ -56,6 +63,7 @@ A p-value of ~0.0005 indicates that the null hypothesis should be rejected in fa
 Null Hypothesis 1: 1990s summer SST = 2000s summer SST
 Alternative Hypothesis 1: 1990s summer SST != 2000s summer SST
 Significance level: 0.05 (two-tailed)
+
 ![Summer Distributions](src/summerdists.png)
 ![Summer t-test](src/summer_ttest.png)
 
@@ -85,5 +93,4 @@ Again, p-values of ~0.005 and ~0.002 indicate, respectively, that summer and win
 Olsen, A., R. M. Key, S. van Heuven, S. K. Lauvset, A. Velo, X. Lin, C. Schirnick, A. Kozyr, T. Tanhua, M. Hoppema,
 S. Jutterström, R. Steinfeldt, E. Jeansson, M. Ishii, F. F. Pérez and T. Suzuki. The Global Ocean Data Analysis Project
 version 2 (GLODAPv2) - an internally consistent data product for the world ocean, Earth System Science Data, 8, 297-323, 2016.
-doi: 10.5194/essd-8-297-2016    
-4-6,9,10,15,16,18,27,32,35,37,40,49,54,58,62,66,70,84
+doi: 10.5194/essd-8-297-2016
