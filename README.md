@@ -61,7 +61,11 @@ Significance level: 0.05 (two-tailed)
 
 A p-value of ~0.0004 indicates that the null hypothesis should be rejected in favor of the null hypothesis. Summer sea surface temperatures in the early 2000s are significantly different from those in the 1990s.
 
-### Temperature by decade is not normally distributed, but the t-test can still be valid with such large sample sizes. Below, p-values are calculated with the nonparametric Mann-Whitney U test to affirm the t-test results.
+In fact, mean summer temperatures were ~0.44°C colder in the 2000s, while mean winter temperatures were ~1.19°C warmer.
+
+![Tempmeans](src/Tempmeans.png)
+
+### Temperature by decade is not normally distributed, but the t-test can still be valid with such large sample sizes. Below, p-values are calculated with the nonparametric Mann-Whitney U test to confirm the t-test results.
 
 ![Mann-Whitney U](src/Mannwhitneyresults.png)
 
