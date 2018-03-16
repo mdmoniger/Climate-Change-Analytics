@@ -6,7 +6,7 @@ Note: SST stands for sea surface temperature (measurements made at a depth of le
 
 
 ## Part 1: Data cleaning and EDA
-The original dataset, which can be found [here](http://cdiac.ess-dive.lbl.gov/ftp/oceans/GLODAPv2/Data_Products/data_product/), consisted of 93 columns, many of which were highly correlated by definition (e.g. "potential temperature" is a function of temperature and air pressure). Preliminary data cleaning consisted of eliminating these subsidiary columns in order to improving processing speeds when reading the CSV to a pandas DataFrame.
+The original dataset, which can be found [here](http://cdiac.ess-dive.lbl.gov/ftp/oceans/GLODAPv2/Data_Products/data_product/), consisted of 100 columns, many of which were highly correlated by definition (e.g. "potential temperature" is a function of temperature and air pressure). Preliminary data cleaning consisted of eliminating these subsidiary columns in order to improving processing speeds when reading the CSV to a pandas DataFrame.
 
 Further data cleaning involved triming the dataset down to only the few columns relevant to the intended hypothesis tests, followed by
 
@@ -32,7 +32,7 @@ A scatter matrix was plotted between all available features to further visualize
 
 ![Scatter Matrix](src/scatter.png)
 
-Due to the extremely high correlation between dissolved oxygen content and temperature (see [Henry's Law](https://en.wikipedia.org/wiki/Henry%27s_law) and the [Van 't Hoff equation](https://en.wikipedia.org/wiki/Van_%27t_Hoff_equation)), focus was directed primarily on SST. It was surmised that the aforementioned variance in annual temperature may correspond to seasonal variance. To this end, data was split into northern and southern hemispheres, excluding the tropics, then rejoined based on the typical summer and winter months in each hemisphere.
+Due to the extremely high correlation between dissolved oxygen content and temperature, focus was directed primarily on SST. The aforementioned variance in annual temperature may correspond to seasonal variance; to this end, data was split into northern and southern hemispheres, excluding the tropics, then rejoined based on the typical summer and winter months in each hemisphere.
 
 Mean seasonal temperatures were then plotted against year.
 
