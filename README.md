@@ -60,7 +60,7 @@ A p-value of ~0.0005 indicates that the null hypothesis should be rejected in fa
 
 ### Welch's t-test comparing summer SST in the 1990s to the 2000s (2000 to 2009).
 
-Null Hypothesis 1: 1990s summer SST = 2000s summer SST
+Null Hypothesis 2: 1990s summer SST = 2000s summer SST
 Alternative Hypothesis 1: 1990s summer SST != 2000s summer SST
 Significance level: 0.05 (two-tailed)
 
@@ -80,7 +80,9 @@ In fact, mean summer temperatures were ~0.44°C colder in the 2000s, while mean 
 Again, p-values of ~0.005 and ~0.002 indicate, respectively, that summer and winter sea surface temperatures in the early 2000s are significantly different from those in the 1990s.
 
 
-## Future: Predictive Modeling
+## Part 3: Predictive Modeling
+
+![Linear Model](src/LinearModel.png)
 
 
 
