@@ -6,7 +6,7 @@ Note: SST stands for sea surface temperature (measurements made at a depth of le
 
 
 ## Part 1: Data cleaning and EDA
-The original dataset, which can be found [here](http://cdiac.ess-dive.lbl.gov/ftp/oceans/GLODAPv2/Data_Products/data_product/), consisted of 100 columns, many of which were highly correlated by definition (e.g. "potential temperature" is a function of temperature and air pressure). Preliminary data cleaning consisted of eliminating these subsidiary columns in order to improving processing speeds when reading the CSV to a pandas DataFrame.
+The original dataset, which can be found [here](http://cdiac.ess-dive.lbl.gov/ftp/oceans/GLODAPv2/Data_Products/data_product/), consisted of 100 columns, many of which were highly correlated by definition (e.g. "potential temperature" is a function of temperature and air pressure). Preliminary data cleaning consisted of eliminating these subsidiary columns in order to improve processing speeds when reading the CSV to a pandas DataFrame.
 
 Further data cleaning involved trimming the dataset down to only the few columns relevant to the intended hypothesis tests, followed by
 
