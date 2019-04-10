@@ -1,6 +1,6 @@
 # Climate-Change-Analytics
 
-Tracking and analyzing temperatures global sea surface temperatures.
+Tracking and analyzing global sea surface temperatures.
 
 Note: SST stands for sea surface temperature (measurements made at a depth of less than 20m).
 
